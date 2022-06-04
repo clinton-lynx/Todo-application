@@ -1,0 +1,102 @@
+body{
+    margin: 8rem auto;
+    background-color: 
+    black;
+    height: 100vh;
+}
+
+.body-wrapper{
+    margin: 0 auto;
+    @include flexRowSb;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: rgb(165, 132, 250);
+    border: solid black 2px;
+    border-radius: 10px; 
+    max-width:590px;
+    box-shadow: 5px -7px 9px rgb(82, 79, 79) ;
+
+    height: 80vh;
+}
+
+
+.header__title{
+    font-size:2.5rem;
+    font-weight: 400;
+    text-transform:  capitalize;
+    margin-top: 4rem;
+}
+
+
+.add-task{
+    background-color: #fff;
+    width: 80vw;
+    max-width: 460px;
+    @include flexRowSb;
+    margin: 2rem 0;
+    border-radius: 10px;
+}
+
+
+#input-el{
+    padding: .3em 0;
+    font-size: 1rem;
+    margin: 0 .5em;
+    width: 80%;
+
+
+    &::first-letter{
+        text-transform: capitalize;
+    }
+}
+.add-el{
+    cursor: pointer;
+    text-transform: capitalize;
+    border-radius: 10px;
+    width: 10%;
+    min-width: 98px;
+    text-align: center;
+    color: #fff;
+    padding:.7rem  .3rem;
+    background-color: rgb(19, 18, 13);
+}
+
+.error-el{
+    color: rgb(255, 8, 8);
+}
+
+
+.task-ul .list-item {
+@include flexRowSb;
+    margin: 1rem 0;
+}
+.btn-wrapper{
+    .delete-btn,.check-btn {
+        text-transform: capitalize;
+        margin:0 .2rem;
+        }
+}
+
+
+
+.check-btn{
+    cursor: pointer;
+    color:#fff;
+    padding: .3rem .5rem;
+    border-radius: 10px;
+    background-color: rgb(105, 245, 123);
+
+}
+.delete-btn{
+    @extend .check-btn;
+   background-color: rgb(255, 205, 205);
+}
+.edit-btn
+{
+    cursor: pointer;
+    color:#fff;
+    text-transform: capitalize;
+    padding: .3rem .5rem;
+    border-radius: 10px;
+    background-color: rgb(218, 205, 255);
+}
